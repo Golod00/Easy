@@ -1,0 +1,14 @@
+@import "fonts.scss"; //FONTS
+
+@import "style.scss"; //MAIN STYLE
+
+@import "header.scss"; //HEADER - START
+
+@import "section/main.scss"; //SECTION - START
+@import "section/information.scss";
+@import "section/instructions.scss";
+@import "section/presentation.scss";
+@import "section/rates.scss";
+@import "section/faq.scss";
+
+@import "footer.scss"; //FOOTER - START
