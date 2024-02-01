@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Raleway-Regular";
+	src: url("../fonts/Raleway-Regular.eot");
+	src: url("../fonts/Raleway-Regular.eot#iefix") format("embedded-opentype"),
+			 url("../fonts/Raleway-Regular.ttf") format("truetype"), 
+			 url("../fonts/Raleway-Regular.woff") format("woff"), 
+			 url("../fonts/Raleway-Regular.woff2") format("woff2"); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway-Bold";
+	src: url("../fonts/Raleway-Bold.eot");
+	src: url("../fonts/Raleway-Bold.eot#iefix") format("embedded-opentype"),
+			 url("../fonts/Raleway-Bold.ttf") format("truetype"), 
+			 url("../fonts/Raleway-Bold.woff") format("woff"), 
+			 url("../fonts/Raleway-Bold.woff2") format("woff2"); 
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway-Extra-Bold";
+	src: url("../fonts/Raleway-ExtraBold.eot");
+	src: url("../fonts/Raleway-ExtraBold.eot#iefix") format("embedded-opentype"),
+			 url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), 
+			 url("../fonts/Raleway-ExtraBold.woff") format("woff"), 
+			 url("../fonts/Raleway-ExtraBold.woff2") format("woff2"); 
+	font-weight: 800;
+	font-style: normal;
+}
