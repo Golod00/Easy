@@ -1,0 +1,108 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 428px;
+  width: 100%;
+  padding: 20px 0px 61px;
+  background: linear-gradient(180deg, #EDF1F6 0%, rgba(237, 241, 246, 0.88) 68.26%, rgba(237, 241, 246, 0) 100%);
+  z-index: 10;
+
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-wrapper {
+      display: flex;
+      z-index: 5;
+      cursor: pointer;
+
+      &__img {
+        width: 107px;
+        height: 28px;
+      }
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .block-languages {
+        display: flex;
+        align-items: center; 
+        gap: 6px;
+        
+        &__arrow {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .btn-burger {
+        @include flex-column;
+        gap: 4px;
+        z-index: 5;
+        cursor: pointer;
+
+        &__part {
+          display: block;
+          width: 28px;
+          height: 4px;
+          border-radius: 30px;
+          background-color: #000000;
+          
+          &:nth-child(2) {
+            background: $allGradient;
+          }
+        }
+      }
+
+      .menu {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background-color: $light-grey-bg;
+        overflow: auto;
+        transition: all .4s ease-in-out;
+        z-index: 2;
+    
+        &-list {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          padding: 30px;
+    
+          &__item {
+            text-align: center;
+  
+            &:last-child {
+              margin-top: 40px;
+            }
+  
+            .bth-link {
+              display: initial;
+            }
+          }
+  
+          &__link {
+            display: block;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 70px;
+            color: #000000;
+          }
+        }
+  
+        &.active {
+          transform: translateY(100%);
+        }
+      }
+    }
+  } 
+}
