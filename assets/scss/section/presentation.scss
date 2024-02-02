@@ -1,0 +1,105 @@
+.presentation {
+  margin-top: 2.688rem; /* 43px в rem */
+
+  &-title-top {
+    max-width: 11.75rem; /* 188px в rem */
+    margin-left: 2.688rem; /* 43px в rem */
+    padding-top: 20px;
+    font-family: "Raleway-Bold";
+    font-size: 1.75rem; /* 28px в rem */
+    line-height: 32.87px;
+  }
+
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+      width: 177px;
+      height: 158px;
+      margin: -7px 0px -30px -25px;
+      object-fit: cover;
+    }
+  }
+
+  &-main {
+    @include flex-column;
+    gap: 20px;
+
+    &__items {
+      @include flex-column;
+      @include wrapper-item;
+
+      &:nth-child(1) .presentation-main__title {
+        max-width: 16.875rem; /* 270px в rem */
+      }
+      &:nth-child(2) .presentation-main__title {
+        max-width: 12.5rem; /* 200px в rem */
+      }
+      &:nth-child(3) .presentation-main__title {
+        max-width: 16.875rem; /* 265px в rem */
+      }
+      &:nth-child(4) .presentation-main__title {
+        max-width: 16.875rem; /* 270px в rem */
+      }
+      &:last-child .presentation-main__title {
+        max-width: 13.813rem; /* 221px в rem */
+      }
+    }
+
+    &__title {
+      max-width: 17.938rem; /* 287px в rem */
+      padding-top: 1.25em; /* 20px в em */
+      margin: auto;
+      text-align: center;
+      font-family: "Raleway-Bold";
+      font-size: 1rem; /* 16px в rem */
+      line-height: 1.172em; /* 18.78px в em */
+    }
+
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-title-bottom {
+    position: relative;
+    max-width: 12.313rem; /* 197px в rem */
+    margin: 0.5em auto 0;
+
+    &__wrapper {
+      position: absolute;
+      top: 3rem; /* 48px в rem */
+      right: -4.25rem; /* -68px в rem */
+      transform: rotate(-7.95deg);
+      border-radius: 4.375rem; /* 70px в rem */
+      background: $light-grey-bg;
+      z-index: -1;
+    }
+
+    &__text {
+      font-family: "Raleway-Bold";
+      font-size: 1.75rem; /* 28px в rem */
+    }
+
+    &__part {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 24px;
+      font-family: "Raleway-Bold";
+      font-size: 2.5rem; /* 40px в rem */
+      background: $allGradient;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      mask-image: $allGradient;
+
+      &::after {
+        content: '🔥';
+        color: red;
+      }
+    }
+  }
+}
